@@ -19,6 +19,7 @@
   --box-shadow2: 0px 1px 1px 0px #00000024;
   --box-shadow3: 0px 1px 3px 0px #0000001f;
   --overlay-color: #2196f3e6;
+  --bgc-overley-position: #2f303acc;
 }
 
 /*! CANCELING DEFAULT STYLES */
@@ -289,7 +290,8 @@ body {
 
 .hero-title,
 .features-subtitle,
-.join-subtitle {
+.join-subtitle,
+.position-title {
   text-transform: uppercase;
 }
 
@@ -381,6 +383,32 @@ body {
 
 .doing-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.doing-item {
+  position: relative;
+}
+
+.position {
+  position: absolute;
+  bottom: 0px;
+
+  display: block;
+  width: 370px;
+  height: 70px;
+
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+
+  background-color: var(--bgc-overley-position);
+  color: var(--primary-white-color);
+}
+
+.position-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
 }
 
 .team {

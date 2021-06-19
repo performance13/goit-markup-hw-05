@@ -833,22 +833,3 @@ body {
   color: var(--primary-white-color);
 }
 
-/* !! */
-.chat-button {
-  /* position: sticky; */
-  position: fixed;
-  /* top: 0px; */
-
-  right: 50px;
-  bottom: 70px;
-
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  background-image: url(../images/chat-icon.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}

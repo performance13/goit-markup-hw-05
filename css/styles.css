@@ -818,7 +818,7 @@ body {
 }
 
 .backdrop.is-hiden {
-  opacity: 0;
+  opacity: 1;
 
   pointer-events: none;
 }
@@ -834,6 +834,7 @@ body {
   min-height: 581px;
 
   background-color: var(--primary-white-color);
+  border-radius: 4px;
 }
 
 .modal-close {

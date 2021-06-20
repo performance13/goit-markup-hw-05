@@ -816,12 +816,14 @@ body {
 
   background-color: var(--bgc-backdrop);
 }
+
 .backdrop.is-hiden {
-  opacity: 0.5;
+  opacity: 0.4;
+
+  pointer-events: none;
 }
 
 /* ? */
-
 .modal {
   position: absolute;
   top: 50%;

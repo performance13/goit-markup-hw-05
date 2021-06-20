@@ -87,7 +87,8 @@ body {
 
 .hero-button,
 .portfolio-button,
-.project-item {
+.project-item,
+.modal-close {
   cursor: pointer;
 }
 
@@ -806,7 +807,7 @@ body {
   color: var(--secondary-text-color);
 }
 
-/* ? */
+/*? backdrop */
 .backdrop {
   position: fixed;
   top: 0;
@@ -818,13 +819,13 @@ body {
   background-color: var(--bgc-backdrop);
 }
 
-.backdrop.is-hiden {
+.backdrop.is-hidden {
   opacity: 0;
 
   pointer-events: none;
 }
 
-/* ? */
+/*? modal */
 .modal {
   position: absolute;
   top: 50%;

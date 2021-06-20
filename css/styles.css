@@ -20,6 +20,7 @@
   --box-shadow3: 0px 1px 3px 0px #0000001f;
   --overlay-color: #2196f3e6;
   --bgc-overley-position: #2f303acc;
+  --bgc-backdrop: #00000033;
 }
 
 /*! CANCELING DEFAULT STYLES */
@@ -390,9 +391,6 @@ body {
 }
 
 .position {
-  position: absolute;
-  bottom: 0px;
-
   display: block;
   width: 370px;
   height: 70px;
@@ -400,6 +398,10 @@ body {
   padding-top: 27px;
   padding-bottom: 27px;
   text-align: center;
+
+  position: absolute;
+  bottom: 0;
+  transform: translate(0%, 0%);
 
   background-color: var(--bgc-overley-position);
   color: var(--primary-white-color);
@@ -800,4 +802,27 @@ body {
   line-height: 1.875;
 
   color: var(--secondary-text-color);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--bgc-backdrop);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 528px;
+  min-height: 581px;
+
+  background-color: var(--primary-white-color);
 }

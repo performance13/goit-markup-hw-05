@@ -21,6 +21,7 @@
   --overlay-color: #2196f3e6;
   --bgc-overley-position: #2f303acc;
   --bgc-backdrop: #00000033;
+  --color-circle-close-icon: #e6e6e6;
 }
 
 /*! CANCELING DEFAULT STYLES */
@@ -804,6 +805,7 @@ body {
   color: var(--secondary-text-color);
 }
 
+/* ? */
 .backdrop {
   position: fixed;
   top: 0;
@@ -814,6 +816,11 @@ body {
 
   background-color: var(--bgc-backdrop);
 }
+.backdrop.is-hiden {
+  opacity: 0.5;
+}
+
+/* ? */
 
 .modal {
   position: absolute;
@@ -825,4 +832,25 @@ body {
   min-height: 581px;
 
   background-color: var(--primary-white-color);
+}
+
+.modal-close {
+  display: block;
+
+  width: 30px;
+  height: 30px;
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-left: auto;
+
+  fill: var(--second-color-logo-header);
+  background-color: var(--primary-white-color);
+
+  border: 1px solid var(--color-circle-close-icon);
+  border-radius: 50%;
+}
+
+.close-icon {
+  width: 11px;
+  height: 11px;
 }

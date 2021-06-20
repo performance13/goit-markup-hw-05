@@ -833,8 +833,10 @@ body {
   min-width: 528px;
   min-height: 581px;
 
-  background-color: var(--primary-white-color);
   border-radius: 4px;
+
+  background-color: var(--primary-white-color);
+  box-shadow: var(--box-shadow1), var(--box-shadow2), var(--box-shadow3);
 }
 
 .modal-close {
